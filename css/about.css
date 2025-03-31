@@ -1,0 +1,137 @@
+
+
+
+.about-section {
+
+    color: #e2e8f0; /* Light gray text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00a8ff; /* Yellow accent */
+    margin-bottom: 30px;
+}
+
+/* About Container - Grid Layout */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    /* max-width: 1100px; */
+    margin: auto;
+    align-items: center;
+}
+
+/* Image Container */
+.about-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Profile Image */
+.about-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00a8ff; /* Yellow Border */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.about-image:hover {
+    transform: scale(1.1);
+}
+
+/* Name and Subtitle */
+.about-intro h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #00a8ff;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #cbd5e1;
+}
+
+/* Content Styling */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* About Cards */
+.about-card {
+    background-color: #1e293b; /* Darker blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Cards */
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Titles in Cards */
+.about-card h3 {
+    color: #00a8ff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Specialty List */
+.specialty-list,
+.focus-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.specialty-list li,
+.focus-list li {
+    background: #00a8ff;
+    color: #1e293b;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Skill Category */
+.skill-category {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-category h4 {
+    color: #00a8ff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
